@@ -1,0 +1,68 @@
+/* style.css */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #4f46e5, #9333ea, #ec4899);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  background: #fff;
+  padding: 40px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  width: 100%;
+}
+
+.title {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.btn {
+  display: block;
+  padding: 12px;
+  text-decoration: none;
+  font-weight: bold;
+  color: #fff;
+  border-radius: 8px;
+  transition: background 0.3s ease;
+}
+
+.btn.student {
+  background-color: #3b82f6;
+}
+
+.btn.student:hover {
+  background-color: #2563eb;
+}
+
+.btn.faculty {
+  background-color: #10b981;
+}
+
+.btn.faculty:hover {
+  background-color: #059669;
+}
+
+.btn.admin {
+  background-color: #ef4444;
+}
+
+.btn.admin:hover {
+  background-color: #dc2626;
+}

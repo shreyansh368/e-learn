@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin User Management</title>
+    <link href="style.css" rel="stylesheet" />	
+</head>
+<body>
+	<header>
+		<div class="container"> 
+			<div class="row">
+				<div class="lft_part">
+				  <img src = "">Logo</a>
+			</div>
+			<div class="rht_part"> 
+				<ul class="menu">
+					<li><a href="index.html">Dashboard</a></li>
+					<li><a href="javascript:void(0)">User management</a>
+				        <ul>
+				          <li><a href="manage-students.html">manage students</a></li>
+					      <li><a href="manage-faculty.html">manage faculty</a></li>
+				        </ul>
+					</li>
+					<li><a href="javascript:void(0)">Course management</a>
+					   <ul>
+					       <li><a href="manage-course.html">manage Courses</a></li>
+					   </ul>
+					</li>
+					<li><a href="javascript:void(0)">Report Generation</a>
+					    <ul>
+						    <li><a href="student-performance.html">Student Performance Reports</a></li>
+							<li><a href="course-progress.html">Course Progress Reports</a></li>
+							<li><a href="faculty-activities.html">Faculty Activity Reports</a></li>
+						</ul>
+					</li>
+					<li><a href="javascript:void(0)">System Monitoring</a>
+					    <ul>
+					        <li><a href="track-uasge.html">Track Platform Usage</a></li>
+					        <li><a href="support-requests.html">Handle Support Requests</a></li>
+					        <li><a href="platform-settings.html">Manage Platform-Wide Settings</a></li>
+					    </ul>
+					</li>
+					<li><a href="javascript:void(0)">Announcement</a>
+					    <ul>
+					        <li><a href="#">Create Broadcast Notification</a></li>
+							<li><a href="#">View Broadcast Notification</a></li>
+							<li><a href="#">Manage Announcement Categories</a></li>
+						</ul>
+					</li>	
+				</ul>	
+			</div>
+		</div>
+	 </div>
+	</header>
+	<div class="container">	
+	         <marquee style="color:red;">Regestrations are started...</marquee>
+		<h1>Admin Portal Dashboard</h1>
+		<section class="dashboard-summary">
+			 <h2>Welcome,Admin!</h2>
+			 <p>Your admin dashboard gives you an overview of the system,including students,faculty,and course data.Below are some key insights.</p>
+		</section>
+			
+		<section class="dashboard-cards">
+			 <div class="card">
+				<h3>Total Students</h3>
+				<p id="studentcount">1000</p>
+				<a href="manage-students.html"class="btn">Manage Students</a>
+			 </div>
+			 <div class="card">
+				<h3>Total Faculty</h3>
+				<p id="facultycount">50</p>
+				<a href="manage-faculty.html"class="btn">Manage Faculty</a>
+			 </div>
+			 <div class="card">
+				<h3>Total Courses </h3>
+				<p id="coursecount">6</p>
+				<a href="manage-courses.html"class="btn">Manage Courses</a>
+			 </div>
+		</section>
+		
+		<section>
+			<h2>Recent Report </h2>
+			<div class="report-summary">
+				<div class="report-card">
+					<h4>Student performance Report</h4>
+					<p>Latest performance insights for students</p>
+					<a href="student-performance.html" class="btn">View Report</a>
+				</div>
+				<div class="report-card">
+					<h4>Course Progress Report</h4>
+					<p>Get an overview of course completion status</p>
+					<a href="course-progress.html" class="btn">View Report</a>
+				</div>
+				<div class="report-card">
+					<h4>Faculty Activity Report</h4>
+					<p>Recent faculty activity and engagement.</p>
+					<a href="faculty-activities.html" class="btn">View Report</a>
+				</div>
+			</div>
+		</section>
+<script src="script.js"></script>
+</body>
+</html>

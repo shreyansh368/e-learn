@@ -1,0 +1,108 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f2f5;
+}
+header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+} 
+a{text-decoration:none;}
+ul{list-style:none;padding:0;margin:0}
+.row{display:flex;justify-content: space-between;align-items: center;}
+.lft_part a{font-size: 24px;font-weight:bold;color:#fff;}
+.rht_part{flex:1;display:flex;justify-content: flex-end;}
+.container{max-width: 1200px;width: 95%;margin:0px auto;padding: 10px;} 
+nav {
+    background-color: #34495e;
+    padding: 10px;
+    display: flex;
+    gap: 10px;
+	justify-content:center;
+}
+nav button {
+    background-color: #2ecc71;
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+nav button:hover {
+    background-color: #27ae60;
+}
+#login-container, .content {
+    padding: 20px;
+}
+#login-container {
+    max-width: 300px;
+    margin: 100px auto;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+#login-container input {
+    width: 92%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+#login-container button {
+    width: 100%;
+    background-color: #2980b9;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+#login-container button:hover {
+    background-color: #1c5980;
+}
+ 
+.error {
+  color: red;
+  margin-top: 10px;
+  display: none;
+}
+.course-card {
+  background-color: #fff;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-left: 5px solid #2ecc71;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.course-card button , section button{
+  margin-top: 10px;
+  background-color: #2ecc71;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.course-card button:hover ,section button:hover {
+  background-color: #27ae60;
+}
+
+.content ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.content ul li {
+  background-color: #fff;
+  padding: 12px;
+  margin-bottom: 10px;
+  border-left: 4px solid #2980b9;
+  box-shadow: 0 0 4px rgba(0,0,0,0.05);
+}

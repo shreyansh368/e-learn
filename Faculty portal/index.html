@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Faculty Portal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <h1>School Name</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#" data-tab="dashboardTab">Dashboard</a></li>
+        <li><a href="#" data-tab="coursesTab">Courses</a></li>
+        <li><a href="#" data-tab="assignmentsTab">Assignments</a></li>
+        <li><a href="#" data-tab="studentsTab">Students</a></li>
+        <li><a href="#" data-tab="notificationsTab">Notifications</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h1>Faculty Portal</h1>
+
+    <div id="dashboardTab" class="tab-content active">
+      <p>Welcome to the Faculty Portal! Use the navigation menu to manage your courses, assignments, students, and notifications.</p>
+    </div>
+
+    <div id="coursesTab" class="tab-content">
+      <section class="course-content">
+        <h2>Create Course Content</h2>
+        <form id="courseForm">
+          <label for="title">Course Title:</label>
+          <input type="text" id="title" name="title" required>
+
+          <label for="lecture">Lecture Notes (PDF):</label>
+          <input type="file" id="lecture" name="lecture" accept=".pdf">
+
+          <label for="video">Video Lesson (URL):</label>
+          <input type="url" id="video" name="video">
+
+          <button type="submit">Add Course</button>
+        </form>
+
+        <h3>Course Content Preview</h3>
+        <ul id="courseList"></ul>
+      </section>
+    </div>
+
+    <div id="assignmentsTab" class="tab-content">
+      <section class="assignment-section">
+			<h2>Assignment</h2>
+
+			<form id="assignmentForm">
+			<label for="assignmentTitle">Assignment Title:</label>
+			<input type="text" id="assignmentTitle" name="assignmentTitle" required>
+
+			<label for="assignmentFile">Upload Assignment (PDF/DOC):</label>
+			<input type="file" id="assignmentFile" name="assignmentFile" accept=".pdf,.doc,.docx">
+
+			<label for="deadline">Set Deadline:</label>
+			<input type="datetime-local" id="deadline" name="deadline" required>
+ 
+
+			<button type="submit">Add Assignment</button>
+			</form>
+
+			<h3>Submitted Assignments</h3>
+			<ul id="assignmentList"></ul>
+		</section>
+
+    </div>
+
+    <div id="studentsTab" class="tab-content">
+      <section class="students-section">
+  <h2>Student Performance Tracking</h2>
+
+  <label for="searchStudent">Search Student:</label>
+  <input type="text" id="searchStudent" placeholder="Type name or ID...">
+
+  <ul id="studentList">
+    <!-- Sample students -->
+    <li>
+      <strong>Priya Das</strong> (ID: S101)<br>
+      Progress: <progress value="75" max="100"></progress> 75%
+      <br>
+      Grade: <input type="number" min="0" max="100" class="gradeInput" placeholder="Marks">
+      Feedback: <input type="text" class="feedbackInput" placeholder="Your feedback">
+      <button class="saveBtn">Save</button>
+    </li>
+    <li>
+      <strong>Rohit Kumar</strong> (ID: S102)<br>
+      Progress: <progress value="60" max="100"></progress> 60%
+      <br>
+      Grade: <input type="number" min="0" max="100" class="gradeInput" placeholder="Marks">
+      Feedback: <input type="text" class="feedbackInput" placeholder="Your feedback">
+      <button class="saveBtn">Save</button>
+    </li>
+	<li>
+      <strong>Priya Das</strong> (ID: S101)<br>
+      Progress: <progress value="75" max="100"></progress> 75%
+      <br>
+      Grade: <input type="number" min="0" max="100" class="gradeInput" placeholder="Marks">
+      Feedback: <input type="text" class="feedbackInput" placeholder="Your feedback">
+      <button class="saveBtn">Save</button>
+    </li>
+    <li>
+      <strong>Rohit Kumar</strong> (ID: S102)<br>
+      Progress: <progress value="60" max="100"></progress> 60%
+      <br>
+      Grade: <input type="number" min="0" max="100" class="gradeInput" placeholder="Marks">
+      Feedback: <input type="text" class="feedbackInput" placeholder="Your feedback">
+      <button class="saveBtn">Save</button>
+    </li>
+    <!-- More students can be dynamically added -->
+  </ul>
+</section>
+
+    </div>
+
+    <div id="notificationsTab" class="tab-content">
+      <section class="notifications-section">
+  <h2>Send Notifications & Reminders</h2>
+
+  <form id="notificationForm">
+    <label for="notificationType">Select Type:</label>
+    <select id="notificationType" required>
+      <option value="">-- Choose Type --</option>
+      <option value="Class">Class</option>
+      <option value="Assignment">Assignment</option>
+      <option value="Exam">Exam</option>
+    </select>
+
+    <label for="notificationMessage">Message:</label>
+    <textarea id="notificationMessage" rows="4" placeholder="Write your announcement..." required></textarea>
+
+    <button type="submit">Send Notification</button>
+  </form>
+
+  <h3>Sent Notifications</h3>
+  <ul id="notificationList"></ul>
+</section>
+
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

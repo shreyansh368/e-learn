@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Course Progress Report</title>
+  <link rel="stylesheet" href="bootstrap.css">
+  <style>
+    body {
+      padding: 20px;
+    }
+    .card {
+      margin-bottom: 20px;
+    }
+    .progress {
+      height: 25px;
+    }
+    .progress-bar {
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1 class="mb-4">Course Progress Report</h1>
+
+    <div class="card">
+      <div class="card-header">Progress Overview</div>
+      <div class="card-body">
+        <div class="mb-3">
+          <label>Mathematics</label>
+          <div class="progress">
+            <div class="progress-bar bg-primary" style="width: 75%;">75%</div>
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label>Science</label>
+          <div class="progress">
+            <div class="progress-bar bg-success" style="width: 60%;">60%</div>
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label>English</label>
+          <div class="progress">
+            <div class="progress-bar bg-warning text-dark" style="width: 90%;">90%</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header">Course Details</div>
+      <div class="card-body">
+        <table class="table table-bordered">
+          <thead class="table-dark">
+            <tr>
+              <th>Course</th>
+              <th>Completed Topics</th>
+              <th>Total Topics</th>
+              <th>Progress</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Mathematics</td>
+              <td>15</td>
+              <td>20</td>
+              <td>75%</td>
+            </tr>
+            <tr>
+              <td>Science</td>
+              <td>12</td>
+              <td>20</td>
+              <td>60%</td>
+            </tr>
+            <tr>
+              <td>English</td>
+              <td>18</td>
+              <td>20</td>
+              <td>90%</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

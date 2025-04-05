@@ -1,0 +1,319 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f4f4f4;
+}
+
+header {
+  background-color: #004080;
+  color: white;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo h1 {
+  color:#fff;
+  margin: 5px 0;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 6px 10px;
+  border-radius: 4px;
+  transition: background 0.2s;
+}
+
+nav ul li a:hover,
+nav ul li a.active-link {
+  background: #002d5e;
+}
+
+.container {
+  padding: 30px;
+  max-width: 900px;
+  margin: auto;
+}
+
+h1 {
+  color: #004080;
+  margin-bottom: 20px;
+}
+
+/* Tabs */
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+/* Feature Box (other sections) */
+.feature-box {
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+/* Course Form Styles */
+.course-content {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-top: 30px;
+}
+
+.course-content h2 {
+  margin-bottom: 20px;
+  color: #004080;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 10px;
+}
+
+.course-content form {
+  display: flex;
+  flex-direction: column;
+}
+
+.course-content label {
+  margin-top: 15px;
+  font-weight: bold;
+  color: #333;
+}
+
+.course-content input[type="text"],
+.course-content input[type="url"],
+.course-content input[type="file"] {
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.course-content button {
+  margin-top: 25px;
+  padding: 12px;
+  font-size: 16px;
+  background-color: #004080;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.course-content button:hover {
+  background-color: #002d5e;
+}
+
+#courseList {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 20px;
+}
+
+#courseList li {
+  background-color: #f9f9f9;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+.assignment-section {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-top: 30px;
+}
+
+.assignment-section h2,
+.assignment-section h3 {
+  color: #004080;
+}
+
+.assignment-section form {
+  display: flex;
+  flex-direction: column;
+}
+
+.assignment-section label {
+  margin-top: 15px;
+  font-weight: bold;
+  color: #333;
+}
+
+.assignment-section input[type="text"],
+.assignment-section input[type="datetime-local"],
+.assignment-section input[type="file"] {
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.assignment-section button {
+  margin-top: 25px;
+  padding: 12px;
+  font-size: 16px;
+  background-color: #004080;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.assignment-section button:hover {
+  background-color: #002d5e;
+}
+
+#assignmentList {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 20px;
+}
+
+#assignmentList li {
+  background-color: #f9f9f9;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+.students-section {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-top: 30px;
+}
+
+.students-section h2 {
+  color: #004080;
+}
+
+#searchStudent {
+  width: 100%;
+  padding: 10px;
+  margin: 15px 0 20px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+#studentList {
+  list-style: none;
+  padding: 0;
+}
+
+#studentList li {
+  background: #f9f9f9;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+#studentList input[type="number"],
+#studentList input[type="text"] {
+  padding: 6px;
+  margin: 8px 5px 0 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  width: 120px;
+}
+
+#studentList button.saveBtn {
+  padding: 6px 12px;
+  background-color: #004080;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+#studentList button.saveBtn:hover {
+  background-color: #002d5e;
+}
+.notifications-section {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-top: 30px;
+}
+
+.notifications-section h2,
+.notifications-section h3 {
+  color: #004080;
+}
+
+.notifications-section form {
+  display: flex;
+  flex-direction: column;
+}
+
+.notifications-section label {
+  margin-top: 15px;
+  font-weight: bold;
+  display:block;
+}
+
+.notifications-section select,
+.notifications-section textarea {
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  width: 98%;
+}
+
+.notifications-section button {
+  margin-top: 20px;
+  padding: 10px;
+  font-size: 16px;
+  background-color: #004080;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.notifications-section button:hover {
+  background-color: #002d5e;
+}
+
+#notificationList {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+#notificationList li {
+  background-color: #f2f8ff;
+  border-left: 4px solid #004080;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}

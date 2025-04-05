@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Support Requests</title>
+  <link rel="stylesheet" href="bootstrap.css">
+  <style>
+    body { padding: 20px; }
+    .card { margin-bottom: 20px; }
+    .status-open { color: red; font-weight: bold; }
+    .status-closed { color: green; font-weight: bold; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1 class="mb-4">Support Requests</h1>
+
+    <div class="card">
+      <div class="card-header">Incoming Requests</div>
+      <div class="card-body">
+        <table class="table table-bordered">
+          <thead class="table-dark">
+            <tr>
+              <th>Ticket ID</th>
+              <th>User</th>
+              <th>Issue</th>
+              <th>Status</th>
+              <th>Date</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>#1021</td>
+              <td>student_maya</td>
+              <td>Cannot access assignments</td>
+              <td class="status-open">Open</td>
+              <td>2025-04-04</td>
+            </tr>
+            <tr>
+              <td>#1019</td>
+              <td>prof_john</td>
+              <td>Dashboard loads slow</td>
+              <td class="status-closed">Closed</td>
+              <td>2025-04-03</td>
+            </tr>
+            <tr>
+              <td>#1017</td>
+              <td>student_ravi</td>
+              <td>Error submitting quiz</td>
+              <td class="status-open">Open</td>
+              <td>2025-04-02</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

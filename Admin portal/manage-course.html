@@ -1,0 +1,92 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin User Management</title>
+    <link href="style.css" rel="stylesheet" />	
+</head>
+<body>
+	<header>
+		<div class="container"> 
+			<div class="row">
+				<div class="lft_part">
+				  <a href="index.html">School Name</a>
+			</div>
+			<div class="rht_part"> 
+				<ul class="menu">
+					<li><a href="index.html">Dashboard</a></li>
+					<li><a href="javascript:void(0)">User management</a>
+				        <ul>
+				          <li><a href="manage-students.html">manage students</a></li>
+					      <li><a href="manage-faculty.html">manage faculty</a></li>
+				        </ul>
+					</li>
+					<li><a href="javascript:void(0)">Course management</a>
+					   <ul>
+					       <li><a href="manage-course.html">manage Courses</a></li>
+					   </ul>
+					</li>
+					<li><a href="javascript:void(0)">Report Generation</a>
+					    <ul>
+						    <li><a href="#">Student Performance Reports</a></li>
+							<li><a href="#">Course Progress Reports</a></li>
+							<li><a href="#">Faculty Activity Reports</a></li>
+						</ul>
+					</li>
+					<li><a href="javascript:void(0)">System Monitoring</a>
+					    <ul>
+					        <li><a href="#">Track Platform Usage</a></li>
+					        <li><a href="#">Handle Support Requests</a></li>
+					        <li><a href="#">Manage Platform-Wide Settings</a></li>
+					    </ul>
+					</li>
+					<li><a href="javascript:void(0)">Announcement</a>
+					    <ul>
+					        <li><a href="#">Create Broadcast Notification</a></li>
+							<li><a href="#">View Broadcast Notification</a></li>
+							<li><a href="#">Manage Announcement Categories</a></li>
+						</ul>
+					</li>	
+				</ul>	
+			</div>
+		</div>
+	 </div>
+	</header>
+	<div class="container">	
+		<section id="course-management">
+			<h2>Course List</h2>
+			<div style="text-align:right;">
+				<button onclick="openCourseForm()">Add Course</button>
+			</div>
+			<table id="courseTable">
+				<thead>
+					<tr>
+						<th>ID</th>
+						<th>Course Name</th>
+						<th>Instructor</th>
+						<th>Action</th>
+					</tr>
+				</thead>
+				<tbody>
+				
+				</tbody>
+			</table>
+		</section>
+		<div id="courseModal" class="modal">
+			<div class="modal-content">
+				<span class="close-btn" onclick="closeCourseForm()">&times;</span>
+				<h3 id="modalTitle">Add New Course </h3>
+				<form id="courseForm">
+					<label for="courseName">Name:</label>
+					<input type="text" id="courseName" required /><br /><br />
+					<label for="instructor">Instructor: </label>
+					<input type="text" id="instructor" required /><br /><br />
+					<button type="submit" id="submitBtn">Add Course</button>
+				</form>
+			</div>
+		</div>
+	</div>
+	<script src="script.js"></script>
+</body>
+</html>

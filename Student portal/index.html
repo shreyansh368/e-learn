@@ -1,0 +1,144 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+		<div class="container"> 
+			<div class="row">
+				<div class="lft_part">
+				  <a href="index.html">School Name</a>
+				</div>
+				<div class="rht_part"> 
+					<h1>Student Portal</h1>
+				</div> 
+			</div>
+		</div>
+    </header>
+
+    <div id="login-container">
+        <h2>Student Login</h2>
+        <input type="text" id="username" placeholder="Enter Username">
+        <input type="password" id="password" placeholder="Enter Password">
+        <button onclick="login()">Login</button>
+		<p id="login-error" class="error">Invalid credentials. Please use praya@testmail.com and password 11111</p>
+
+    </div>
+    
+    <div id="dashboard" style="display: none;">
+        <nav>
+            <button onclick="showSection('courses')">Courses</button>
+            <button onclick="showSection('lectures')">Lectures</button>
+            <button onclick="showSection('assignments')">Assignments</button>
+            <button onclick="showSection('quizzes')">Quizzes</button>
+            <button onclick="showSection('notifications')">Notifications</button>
+            <button onclick="logout()">Logout</button>
+        </nav>
+         
+		<section id="courses" class="content">
+  <h2>Available Courses</h2>
+  <div class="course-card">
+    <h3>Introduction to Web Development</h3>
+    <p>Learn the basics of HTML, CSS, and JavaScript to build interactive websites.</p>
+    <button onclick="alert('Enrolled in Web Development!')">Enroll</button>
+  </div>
+  <div class="course-card">
+    <h3>Python Programming</h3>
+    <p>Dive into Python syntax, data structures, functions, and more.</p>
+    <button onclick="alert('Enrolled in Python Programming!')">Enroll</button>
+  </div>
+  <div class="course-card">
+    <h3>Database Management</h3>
+    <p>Understand SQL, normalization, and how databases work in modern apps.</p>
+    <button onclick="alert('Enrolled in Database Management!')">Enroll</button>
+  </div>
+</section>
+
+<section id="lectures" class="content" style="display: none;">
+  <h2>Recorded Lectures</h2>
+  <ul class="video-list">
+    <li>
+      <strong>HTML & CSS Basics</strong><br />
+      <video width="320" height="180" controls>
+        <source src="#" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </li>
+    <li>
+      <strong>Python Variables & Data Types</strong><br />
+      <video width="320" height="180" controls>
+        <source src="#" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </li>
+  </ul>
+
+  <h2>Live Classes</h2>
+  <ul class="live-classes">
+    <li>
+      <strong>React.js Live Coding</strong><br />
+      Starts at 3:00 PM today<br />
+      <button onclick="alert('Joining React.js live class...')">Join Now</button>
+    </li>
+    <li>
+      <strong>SQL Query Workshop</strong><br />
+      Starts at 6:00 PM tomorrow<br />
+      <button onclick="alert('Joining SQL Workshop...')">Join Now</button>
+    </li>
+  </ul>
+</section>
+
+<section id="assignments" class="content" style="display: none;">
+  <h2>Your Assignments</h2>
+  <ul>
+    <li>
+      <strong>HTML Page Layout</strong> – Due: April 10<br />
+      <button onclick="alert('Uploading HTML Assignment...')">Submit</button>
+    </li>
+    <li>
+      <strong>Python Function Exercises</strong> – Due: April 12<br />
+      <button onclick="alert('Uploading Python Assignment...')">Submit</button>
+    </li>
+  </ul>
+</section>
+
+<section id="quizzes" class="content" style="display: none;">
+  <h2>Quizzes & Exams</h2>
+  <ul>
+    <li>
+      <strong>JavaScript Fundamentals Quiz</strong><br />
+      <button onclick="alert('Starting JavaScript Quiz...')">Take Quiz</button>
+    </li>
+    <li>
+      <strong>Python Basics Test</strong><br />
+      <button onclick="alert('Starting Python Test...')">Take Test</button>
+    </li>
+  </ul>
+  <h3>Recent Scores</h3>
+  <ul>
+    <li>HTML Quiz – 85%</li>
+    <li>CSS Test – 90%</li>
+  </ul>
+</section>
+
+<section id="notifications" class="content" style="display: none;">
+  <h2>Latest Notifications</h2>
+  <ul>
+    <li><strong>📢 New Assignment:</strong> Database Schema Task due by April 14</li>
+    <li><strong>📢 Live Class:</strong> React.js Advanced on April 6 at 5 PM</li>
+    <li><strong>📢 Grade Posted:</strong> Python Functions Quiz - 88%</li>
+    <li><strong>📢 Holiday Notice:</strong> Campus will be closed on April 8</li>
+  </ul>
+</section>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+ 

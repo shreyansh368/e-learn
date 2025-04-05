@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Student Performance</title>
+  <link rel="stylesheet" href="bootstrap.css">
+  <style>
+    body {
+      padding: 20px;
+    }
+    .card {
+      margin-bottom: 20px;
+    }
+    canvas {
+      max-width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1 class="mb-4">Student Performance</h1>
+
+    <div class="card">
+      <div class="card-header">Performance Overview</div>
+      <div class="card-body">
+        <canvas id="gradeChart"></canvas>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header">Grades Table</div>
+      <div class="card-body">
+        <table class="table table-bordered">
+          <thead class="table-dark">
+            <tr>
+              <th>Subject</th>
+              <th>Marks Obtained</th>
+              <th>Total Marks</th>
+              <th>Percentage</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Mathematics</td>
+              <td>88</td>
+              <td>100</td>
+              <td>88%</td>
+            </tr>
+            <tr>
+              <td>Science</td>
+              <td>76</td>
+              <td>100</td>
+              <td>76%</td>
+            </tr>
+            <tr>
+              <td>English</td>
+              <td>91</td>
+              <td>100</td>
+              <td>91%</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script>
+    const ctx = document.getElementById('gradeChart').getContext('2d');
+    const gradeChart = new Chart(ctx, {
+      type: 'bar',
+      data: {
+        labels: ['Math', 'Science', 'English'],
+        datasets: [{
+          label: 'Marks',
+          data: [88, 76, 91],
+          backgroundColor: ['#0d6efd', '#198754', '#dc3545'],
+        }]
+      },
+      options: {
+        responsive: true,
+        scales: {
+          y: {
+            beginAtZero: true,
+            max: 100
+          }
+        }
+      }
+    });
+  </script>
+</body>
+</html>
